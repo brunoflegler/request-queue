@@ -1,4 +1,4 @@
-# QUEUE process
+# MyQueue - Task in background
 
 Calling queue.create() with the type of job ("process"), and arbitrary job data will return a Job , which can then be save() ed, adding it to redis, with a default priority.
 
