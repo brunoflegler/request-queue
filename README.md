@@ -49,3 +49,8 @@ Or run Yarn development:
 ```sh
 $ yarn dev
 ```
+
+### Documentation
+
+Follow tasks in queue in [http://localhost:3000/kue] and [http://localhost:3000/api/]
+
