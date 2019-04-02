@@ -12,8 +12,8 @@ class App {
   }
 
   middlewares () {
-    this.express.use(express.json())
     this.express.use(cors())
+    this.express.use(express.json())
   }
 
   routes () {
@@ -34,4 +34,4 @@ class App {
   }
 }
 
-module.exports = new App().express
+module.exports = new App()

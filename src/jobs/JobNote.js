@@ -7,15 +7,17 @@ class JobNote {
     return 'TaskNote'
   }
 
-  async handle (job, done) {
-    const { id, files } = job.data
+  async handle ({ data }, done) {
+    try {
+      await loadAll(data.id, data.files)
 
-    await loadAll(id, files)
+      console.log('-------------------')
+      console.log(`Lote ${data.id} processado com ${data.files.length} notas  `)
 
-    console.log('-------------------')
-    console.log(`Lote ${id} processado com ${files.length} notas  `)
-
-    done()
+      done()
+    } catch (err) {
+      done(err)
+    }
   }
 }
 

@@ -10,13 +10,14 @@ const controllers = require('./app/controllers')
 kue.createQueue({ redis: redisConfig })
 
 ui.setup({
-  apiURL: '/api', // IMPORTANT: specify the api url
-  baseURL: '/kue', // IMPORTANT: specify the base url
-  updateInterval: 500 // Optional: Fetches new data every 5000 ms
+  apiURL: '/api',
+  baseURL: '/kue',
+  updateInterval: 500
 })
 
 Router.use('/api', kue.app)
 Router.use('/kue', ui.app)
 Router.post('/background', controllers.NoteController.background)
+Router.post('/realtime', controllers.NoteController.realtime)
 
 module.exports = Router

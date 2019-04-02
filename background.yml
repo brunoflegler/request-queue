@@ -1,0 +1,14 @@
+config:
+  target: "http://localhost:3000"
+  phases:
+    - duration: 10
+      arrivalRate: 100
+  defaults:
+    headers:
+      Content-Type: "application/json"
+scenarios:
+  - flow:
+      - post:
+          url: "/realtime"
+          json:
+            files: ["1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1"]
