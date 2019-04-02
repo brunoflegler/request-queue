@@ -52,5 +52,5 @@ $ yarn dev
 
 ### Documentation
 
-Follow tasks in queue in [http://localhost:3000/kue] and [http://localhost:3000/api/]
+Follow tasks in queue in [http://localhost:3000/kue] (http://localhost:3000/kue) and [http://localhost:3000/api/](http://localhost:3000/api/)
 
