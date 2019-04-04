@@ -1,8 +1,8 @@
 config:
   target: "http://localhost:3000"
   phases:
-    - duration: 10
-      arrivalRate: 1000
+    - duration: 60
+      arrivalRate: 10
   defaults:
     headers:
       Content-Type: "application/json"
@@ -11,19 +11,181 @@ scenarios:
       - post:
           url: "/background"
           json:
-            files: ["1"]
+            invoices: [{ "name": "Bruno Flegler Dal'Col", "total": 150.00 }]
   - flow:
       - post:
           url: "/background"
           json:
-            files: ["1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1"]
+            invoices:  [
+		{
+			"name": "Bruno Flegler Dal'Col",
+			"total": 150.00
+		},
+		{
+			"name": "Bruno Flegler Dal'Col",
+			"total": 150.00
+		},
+		{
+			"name": "Bruno Flegler Dal'Col",
+			"total": 150.00
+		},
+		{
+			"name": "Bruno Flegler Dal'Col",
+			"total": 150.00
+		},
+		{
+			"name": "Bruno Flegler Dal'Col",
+			"total": 150.00
+		},
+		{
+			"name": "Bruno Flegler Dal'Col",
+			"total": 150.00
+		},
+		{
+			"name": "Bruno Flegler Dal'Col",
+			"total": 150.00
+		},
+		{
+			"name": "Bruno Flegler Dal'Col",
+			"total": 150.00
+		},
+		{
+			"name": "Bruno Flegler Dal'Col",
+			"total": 150.00
+		},
+		{
+			"name": "Bruno Flegler Dal'Col",
+			"total": 150.00
+		},
+		{
+			"name": "Bruno Flegler Dal'Col",
+			"total": 150.00
+		},
+		{
+			"name": "Bruno Flegler Dal'Col",
+			"total": 150.00
+		},
+		{
+			"name": "Bruno Flegler Dal'Col",
+			"total": 150.00
+		},
+		{
+			"name": "Bruno Flegler Dal'Col",
+			"total": 150.00
+		},
+		{
+			"name": "Bruno Flegler Dal'Col",
+			"total": 150.00
+		},
+		{
+			"name": "Bruno Flegler Dal'Col",
+			"total": 150.00
+		},
+		{
+			"name": "Bruno Flegler Dal'Col",
+			"total": 150.00
+		},
+		{
+			"name": "Bruno Flegler Dal'Col",
+			"total": 150.00
+		},
+		{
+			"name": "Bruno Flegler Dal'Col",
+			"total": 150.00
+		},
+		{
+			"name": "Bruno Flegler Dal'Col",
+			"total": 150.00
+		}
+	]
   - flow:
       - post:
           url: "/realtime"
           json:
-            files: ["1"]
+            invoices: [{ "name": "Bruno Flegler Dal'Col", "total": 150.00 }]
   - flow:
       - post:
           url: "/realtime"
           json:
-            files: ["1", "1", "1", "1", "1", "1", "1", "1", "1", "1", "1"]
+            invoices:  [
+		{
+			"name": "Bruno Flegler Dal'Col",
+			"total": 150.00
+		},
+		{
+			"name": "Bruno Flegler Dal'Col",
+			"total": 150.00
+		},
+		{
+			"name": "Bruno Flegler Dal'Col",
+			"total": 150.00
+		},
+		{
+			"name": "Bruno Flegler Dal'Col",
+			"total": 150.00
+		},
+		{
+			"name": "Bruno Flegler Dal'Col",
+			"total": 150.00
+		},
+		{
+			"name": "Bruno Flegler Dal'Col",
+			"total": 150.00
+		},
+		{
+			"name": "Bruno Flegler Dal'Col",
+			"total": 150.00
+		},
+		{
+			"name": "Bruno Flegler Dal'Col",
+			"total": 150.00
+		},
+		{
+			"name": "Bruno Flegler Dal'Col",
+			"total": 150.00
+		},
+		{
+			"name": "Bruno Flegler Dal'Col",
+			"total": 150.00
+		},
+		{
+			"name": "Bruno Flegler Dal'Col",
+			"total": 150.00
+		},
+		{
+			"name": "Bruno Flegler Dal'Col",
+			"total": 150.00
+		},
+		{
+			"name": "Bruno Flegler Dal'Col",
+			"total": 150.00
+		},
+		{
+			"name": "Bruno Flegler Dal'Col",
+			"total": 150.00
+		},
+		{
+			"name": "Bruno Flegler Dal'Col",
+			"total": 150.00
+		},
+		{
+			"name": "Bruno Flegler Dal'Col",
+			"total": 150.00
+		},
+		{
+			"name": "Bruno Flegler Dal'Col",
+			"total": 150.00
+		},
+		{
+			"name": "Bruno Flegler Dal'Col",
+			"total": 150.00
+		},
+		{
+			"name": "Bruno Flegler Dal'Col",
+			"total": 150.00
+		},
+		{
+			"name": "Bruno Flegler Dal'Col",
+			"total": 150.00
+		}
+	]

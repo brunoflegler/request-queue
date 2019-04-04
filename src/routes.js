@@ -17,7 +17,7 @@ ui.setup({
 
 Router.use('/api', kue.app)
 Router.use('/kue', ui.app)
-Router.post('/background', controllers.NoteController.background)
-Router.post('/realtime', controllers.NoteController.realtime)
+Router.post('/background', controllers.InvoiceController.background)
+Router.post('/realtime', controllers.InvoiceController.realtime)
 
 module.exports = Router

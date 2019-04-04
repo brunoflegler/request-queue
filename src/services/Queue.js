@@ -4,7 +4,7 @@ const redisConfig = require('../config/redis')
 const jobs = require('../jobs')
 const Queue = kue.createQueue({ redis: redisConfig })
 
-Queue.process(`@nfs:task`, 10, jobs.JobNote.handle)
+Queue.process(jobs.InvoiceJob.key, 10, jobs.InvoiceJob.handle)
 
 Queue.on('error', err => {
   console.log(err)
