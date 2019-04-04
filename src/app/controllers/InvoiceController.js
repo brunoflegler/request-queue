@@ -8,12 +8,12 @@ class InvoiceController {
   async realtime (req, res) {
     let { ...data } = req.body
 
-    console.log('-------------------')
-    console.log(`Lote de nota fiscal adicionado na fila`)
+    // console.log('-------------------')
+    // console.log(`Lote de nota fiscal adicionado na fila`)
 
     const response = await loadAllInvoices(data)
 
-    console.log(`Lote processado com ${response.length} notas  `)
+    // console.log(`Lote processado com ${response.length} notas  `)
 
     return res.send(response)
   }
@@ -28,9 +28,9 @@ class InvoiceController {
       .removeOnComplete(true)
       .save()
 
-    console.log('-------------------')
+    /*     console.log('-------------------')
     console.log(`Lote de nota fiscal adicionado na fila`)
-
+ */
     return res.json({ status: true })
   }
 }
