@@ -16,7 +16,7 @@ async function isWaiting (size) {
       // code
 
       resolve({ status: 'processado' })
-    }, 1000)
+    }, 100)
   })
 }
 
