@@ -9,9 +9,9 @@ class InvoiceJob {
 
   async handle ({ id, data }, done) {
     try {
-      const response = await loadAllInvoices(data)
+      await loadAllInvoices(data)
 
-      console.log(`Lote ${id} processado com ${response.length} notas  `)
+      // console.log(`Lote ${id} processado com ${response.length} notas  `)
 
       done()
     } catch (err) {
