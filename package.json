@@ -23,7 +23,7 @@
     "eslint-plugin-standard": "^4.0.0"
   },
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "bee-queue": "^1.2.2",
     "body-parser": "^1.18.3",
     "cors": "^2.8.5",
